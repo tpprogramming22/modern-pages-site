@@ -7,14 +7,14 @@
   <meta name="description" content="Modern Pages crafts beautiful, high-converting websites for businesses ready to grow. Stunning design meets SEO that gets you found on Google.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       background: #07070B;
       color: #F2F0EC;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-size: 16px;
       line-height: 1.6;
       overflow-x: hidden;
@@ -24,14 +24,14 @@
       --bg: #07070B;
       --bg-2: #0D0D14;
       --bg-3: #15151F;
-      --mint: #00FFB2;
+      --primary: #60D0FF;
       --coral: #FF6040;
       --yellow: #FFE14D;
       --text: #F2F0EC;
       --muted: #7A7A90;
       --border: rgba(255,255,255,0.07);
-      --syne: 'Syne', sans-serif;
-      --jakarta: 'Plus Jakarta Sans', sans-serif;
+      --syne: 'Outfit', sans-serif;
+      --jakarta: 'Inter', sans-serif;
       --r: 14px;
     }
 
@@ -54,7 +54,7 @@
       font-family: var(--syne); font-size: 19px; font-weight: 800;
       color: var(--text); text-decoration: none; letter-spacing: -0.5px;
     }
-    .nav-logo span { color: var(--mint); }
+    .nav-logo span { color: var(--primary); }
     .nav-links { display: flex; gap: 34px; list-style: none; }
     .nav-links a {
       color: var(--muted); text-decoration: none;
@@ -62,15 +62,15 @@
     }
     .nav-links a:hover { color: var(--text); }
     .nav-cta {
-      background: var(--mint); color: #07070B;
+      background: var(--primary); color: #07070B;
       border: none; padding: 10px 22px; border-radius: 50px;
       font-family: var(--jakarta); font-size: 13px; font-weight: 700;
       cursor: pointer; transition: all 0.22s; text-decoration: none;
     }
     .nav-cta:hover {
-      background: #00E5A0;
+      background: #4BBEFA;
       transform: translateY(-1px);
-      box-shadow: 0 8px 28px rgba(0,255,178,0.25);
+      box-shadow: 0 8px 28px rgba(96,208,255,0.25);
     }
 
     /* ── HERO ── */
@@ -78,7 +78,7 @@
       min-height: 100vh; display: flex; align-items: center;
       padding: 130px 0 90px; position: relative; overflow: hidden;
       background:
-        radial-gradient(ellipse 900px 700px at -150px -100px, rgba(0,255,178,0.065), transparent),
+        radial-gradient(ellipse 900px 700px at -150px -100px, rgba(96,208,255,0.065), transparent),
         radial-gradient(ellipse 700px 500px at 110% 110%, rgba(255,96,64,0.05), transparent),
         var(--bg);
     }
@@ -97,14 +97,14 @@
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(0,255,178,0.07);
-      border: 1px solid rgba(0,255,178,0.18);
-      color: var(--mint); padding: 6px 16px; border-radius: 50px;
+      background: rgba(96,208,255,0.07);
+      border: 1px solid rgba(96,208,255,0.18);
+      color: var(--primary); padding: 6px 16px; border-radius: 50px;
       font-size: 12px; font-weight: 600; letter-spacing: 0.2px;
       margin-bottom: 28px;
     }
     .hero-badge .pulse {
-      width: 7px; height: 7px; background: var(--mint);
+      width: 7px; height: 7px; background: var(--primary);
       border-radius: 50%; animation: pulse 2.2s ease-in-out infinite;
     }
     @keyframes pulse {
@@ -114,25 +114,25 @@
     .hero-h1 {
       font-family: var(--syne);
       font-size: clamp(40px, 4.8vw, 66px);
-      font-weight: 800; line-height: 1.04;
-      letter-spacing: -2px; margin-bottom: 24px; color: var(--text);
+      font-weight: 800; line-height: 1.1;
+      letter-spacing: -1px; margin-bottom: 24px; color: var(--text);
     }
-    .hero-h1 .hi { color: var(--mint); }
+    .hero-h1 .hi { color: var(--primary); }
     .hero-sub {
       font-size: 16px; color: var(--muted);
       line-height: 1.75; max-width: 440px; margin-bottom: 40px;
     }
     .hero-actions { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
     .btn-primary {
-      background: var(--mint); color: #07070B; border: none;
+      background: var(--primary); color: #07070B; border: none;
       padding: 14px 28px; border-radius: 50px;
       font-family: var(--jakarta); font-size: 14px; font-weight: 700;
       cursor: pointer; transition: all 0.22s;
       text-decoration: none; display: inline-flex; align-items: center; gap: 7px;
     }
     .btn-primary:hover {
-      background: #00E5A0; transform: translateY(-2px);
-      box-shadow: 0 14px 36px rgba(0,255,178,0.28);
+      background: #4BBEFA; transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(96,208,255,0.28);
     }
     .btn-ghost {
       color: var(--text); text-decoration: none;
@@ -147,9 +147,9 @@
     }
     .stat-val {
       font-family: var(--syne); font-size: 30px; font-weight: 800;
-      color: var(--text); letter-spacing: -1px;
+      color: var(--text); letter-spacing: -0.5px;
     }
-    .stat-val span { color: var(--mint); }
+    .stat-val span { color: var(--primary); }
     .stat-lbl { font-size: 12px; color: var(--muted); margin-top: 3px; }
 
     /* ── CAROUSEL ── */
@@ -188,7 +188,7 @@
       background: rgba(255,255,255,0.12); border: none; cursor: pointer;
       transition: all 0.3s; padding: 0;
     }
-    .c-dot.active { background: var(--mint); width: 22px; }
+    .c-dot.active { background: var(--primary); width: 22px; }
 
     /* floating badges */
     .hero-float {
@@ -372,7 +372,7 @@
       color: var(--muted); padding: 0 22px; letter-spacing: .3px;
       display: inline-flex; align-items: center; gap: 22px;
     }
-    .m-item::after { content: '●'; color: var(--mint); font-size: 7px; }
+    .m-item::after { content: '●'; color: var(--primary); font-size: 7px; }
     @keyframes ticker {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
@@ -381,11 +381,11 @@
     /* ── SECTIONS SHARED ── */
     .s-label {
       font-size: 11px; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 3px; color: var(--mint); margin-bottom: 14px;
+      letter-spacing: 3px; color: var(--primary); margin-bottom: 14px;
     }
     .s-title {
       font-family: var(--syne); font-size: clamp(30px, 3.8vw, 50px);
-      font-weight: 800; line-height: 1.08; letter-spacing: -1.5px;
+      font-weight: 800; line-height: 1.1; letter-spacing: -0.5px;
       color: var(--text); margin-bottom: 16px;
     }
     .s-sub { font-size: 15px; color: var(--muted); line-height: 1.75; max-width: 500px; }
@@ -405,7 +405,7 @@
     }
     .svc-card::after {
       content: ''; position: absolute; inset: 0;
-      background: radial-gradient(circle at 0% 0%, rgba(0,255,178,.05), transparent 60%);
+      background: radial-gradient(circle at 0% 0%, rgba(96,208,255,.05), transparent 60%);
       opacity: 0; transition: opacity .3s;
     }
     .svc-card:hover { background: var(--bg-3); }
@@ -427,14 +427,14 @@
       content: ''; position: absolute;
       top: 27px; left: 14%; right: 14%;
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(0,255,178,.2), transparent);
+      background: linear-gradient(to right, transparent, rgba(96,208,255,.2), transparent);
     }
     .proc-step { text-align: center; }
     .proc-num {
       width: 54px; height: 54px; border-radius: 50%;
       background: var(--bg-3); border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;
-      font-family: var(--syne); font-size: 18px; font-weight: 800; color: var(--mint);
+      font-family: var(--syne); font-size: 18px; font-weight: 800; color: var(--primary);
     }
     .proc-title {
       font-family: var(--syne); font-size: 19px; font-weight: 700;
@@ -453,7 +453,7 @@
       border-radius: 16px; padding: 30px;
       transition: transform .3s, border-color .3s;
     }
-    .testi-card:hover { transform: translateY(-5px); border-color: rgba(0,255,178,.14); }
+    .testi-card:hover { transform: translateY(-5px); border-color: rgba(96,208,255,.14); }
     .stars { color: var(--yellow); font-size: 13px; letter-spacing: 2px; margin-bottom: 14px; }
     .testi-q { font-size: 14px; color: var(--text); line-height: 1.75; font-style: italic; margin-bottom: 22px; opacity: .88; }
     .testi-auth { display: flex; align-items: center; gap: 12px; }
@@ -502,21 +502,21 @@
       appearance: none; -webkit-appearance: none;
     }
     .fctrl:focus {
-      border-color: rgba(0,255,178,.35);
-      box-shadow: 0 0 0 3px rgba(0,255,178,.07);
+      border-color: rgba(96,208,255,.35);
+      box-shadow: 0 0 0 3px rgba(96,208,255,.07);
     }
     .fctrl::placeholder { color: #2E2E40; }
     textarea.fctrl { resize: none; min-height: 96px; }
     select.fctrl option { background: #15151F; }
     .f-submit {
-      width: 100%; background: var(--mint); color: #07070B;
+      width: 100%; background: var(--primary); color: #07070B;
       border: none; padding: 14px; border-radius: 10px;
       font-family: var(--jakarta); font-size: 14px; font-weight: 700;
       cursor: pointer; transition: all .22s; margin-top: 8px; letter-spacing: .2px;
     }
     .f-submit:hover {
-      background: #00E5A0; transform: translateY(-1px);
-      box-shadow: 0 10px 28px rgba(0,255,178,.24);
+      background: #4BBEFA; transform: translateY(-1px);
+      box-shadow: 0 10px 28px rgba(96,208,255,.24);
     }
 
     /* ── FOOTER ── */
@@ -526,7 +526,7 @@
       gap: 44px; margin-bottom: 48px;
     }
     .foot-logo { font-family: var(--syne); font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 10px; }
-    .foot-logo span { color: var(--mint); }
+    .foot-logo span { color: var(--primary); }
     .foot-tag { font-size: 13px; color: var(--muted); line-height: 1.65; max-width: 200px; }
     .foot-h { font-family: var(--syne); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text); margin-bottom: 16px; }
     .foot-ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -560,7 +560,7 @@
       /* Hero: stack vertically */
       #hero { padding: 100px 0 60px; }
       .hero-inner { grid-template-columns: 1fr; gap: 44px; }
-      .hero-h1 { font-size: clamp(36px, 9vw, 52px); letter-spacing: -1.5px; }
+      .hero-h1 { font-size: clamp(36px, 9vw, 52px); letter-spacing: -1px; }
       .hero-sub { font-size: 15px; }
       .hero-stats { gap: 28px; margin-top: 36px; padding-top: 32px; }
       .stat-val { font-size: 26px; }
@@ -599,7 +599,7 @@
 
       /* Hero */
       #hero { padding: 90px 0 56px; }
-      .hero-h1 { font-size: clamp(32px, 10vw, 44px); letter-spacing: -1px; }
+      .hero-h1 { font-size: clamp(32px, 10vw, 44px); letter-spacing: -0.5px; }
       .hero-sub { font-size: 14px; }
       .hero-actions { flex-direction: column; align-items: flex-start; gap: 14px; }
       .hero-stats { flex-wrap: wrap; gap: 24px; }
@@ -622,7 +622,7 @@
 
       /* Sections */
       #services, #process, #testimonials, #contact { padding: 56px 0; }
-      .s-title { font-size: clamp(28px, 8vw, 40px); letter-spacing: -1px; }
+      .s-title { font-size: clamp(28px, 8vw, 40px); letter-spacing: -0.5px; }
 
       /* Services: single column */
       .svc-grid { grid-template-columns: 1fr; }
@@ -926,7 +926,7 @@
           <div class="stars">★★★★★</div>
           <p class="testi-q">"Modern Pages completely transformed our online presence. Our bookings increased 40% within three months. The design is stunning and our Google ranking has never been better."</p>
           <div class="testi-auth">
-            <div class="t-av" style="background:rgba(0,255,178,.1);color:var(--mint)">S</div>
+            <div class="t-av" style="background:rgba(96,208,255,.1);color:var(--primary)">S</div>
             <div>
               <div class="t-name">Sarah Mitchell</div>
               <div class="t-biz">Pearl Dental Clinic, London</div>
@@ -1118,7 +1118,7 @@
       e.preventDefault();
       const btn = document.getElementById('submitBtn');
       btn.textContent = '✓ Message Sent!';
-      btn.style.background = '#00E5A0';
+      btn.style.background = '#4BBEFA';
       btn.disabled = true;
       setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; btn.disabled = false; }, 4000);
     });
